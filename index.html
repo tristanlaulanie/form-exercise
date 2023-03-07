@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style.css">
+    <title> Formulaire de Contact
+    </title>
+</head>
+<body>
+    <section class="form_section">
+    <header>
+        <h1> Contactez nous </h1>
+        <br>
+        <p class="contact_description">
+            Un problème, une question, envie de nous envoyer un message d'amour ? N'hésitez pas <br>
+            a utiliser ce formulaire pour prendre contact avec nous !
+        </p>
+        <br>
+    </header>
+    <div class="form_container">
+            <form action="" method="">
+            <p id="space_label">
+            <label for="nom">Votre nom </label><br>
+                <input id="text_input" type="text" id="prénom" name="prénom" placeholder="Martin" size="80">
+                <br>
+            </p>
+            <p id="space_label">
+                <label id="email_label" for="e-mail">Votre e-mail </label><br>
+                <input id="text_input" type="text" id="nom" name="nom" placeholder="monadresse@mail.com" size="80">
+            <br>
+            </p>
+            </p>
+            <p id="space_label">
+                <label id="subject_label" for="nom">Quel est le sujet de votre message ? </label> <br>
+                <select id="text_input" name="matiere" id="matiere" placeholder="Sujet message">
+                    <option value="" disabled selected>Choisissez le sujet de votre message</option>
+                    <option value="mathematique">math</option>
+                    <option value="français">français</option>
+                    <option value="developpement">developpement web</option>
+                    <option value="anglais">anglais</option>
+                </select>
+            <br>
+            </p>
+                <label for="message">
+                    Votre message 
+                </label><br>
+                <textarea id="text_input" rows="5" cols="30" placeholder="Bonjour, je vous contacte car..." ></textarea>
+            </form>
+            <br>
+            <div id="form_button">
+            <button>Envoyer mon message</button><br><br>
+            </div>
+    </div>
+    </section>
+</body>
+</html>

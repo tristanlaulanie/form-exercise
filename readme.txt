@@ -1,0 +1,1 @@
+largeur mobile : 480px.

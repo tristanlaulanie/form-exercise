@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mehdi</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Mehdi Le Super Stagiaire
+        </h1>
+        <p class="profession">
+            Developpeur Web & Web Mobile
+        </p>
+    </header>
+    <div class="main-container">
+        <div class="col"><i class="fa-brands fa-square-twitter"></i>
+            <br>
+            <!-- LE FORMULAIRE DE BASE pour le prénom et le nom
+                 form pour formulaire, action => la ou on va envoyer les donneéd. option method, c la maniere dont on va envoyer les données -->
+            <form action="" method="">
+                <!-- LABEL sert a "labeliser" un input, le lié a un input d'ou le for (ici pour prénom) -->
+            <label for="prénom">Prénom: </label><br>
+                <!-- INPUT c'est "qu'est ce qu on va ecrire à l'interieur"
+                     TYPE peut etre un texte, un nombre, un e-mail... 
+                     ID catch 'attrape' le label par son for, ici prénom /!\ il est important de ne pas faire de faute lors de ce catch car ça va les liés!!!!
+                     NAME c'est ce qui va etre envoyé dans la base de donnée sous forme de libelé (ici prénom) et la valeur associée (ici le champs renseigné, exemple: Stéphane)
+                     PLACEHOLDER est l'indication en grisé du champs associé au label -->
+                <input type="text" id="prénom" name="prénom" placeholder="Entrez votre prénom!">
+                    <br>
+                <!-- form pour formulaire, action => la ou on va envoyer les donneéd. option method, c la maniere dont on va envoyer les données -->
+            <form action="" method="">
+                <!-- un label sert a "labeliser" un input, le lié a un input d'ou le for (ici pour nom) -->
+                <label for="nom">nom: </label><br>
+                <!-- 
+                    INPUT c'est "qu'est ce qu on va ecrire à l'interieur"
+                     TYPE peut etre un texte, un nombre, un e-mail... 
+                     ID catch 'attrape' le label par son for, ici nom /!\ il est important de ne pas faire de faute lors de ce catch car ça va les liés!!!!
+                     NAME c'est ce qui va etre envoyé dans la base de donnée sous forme de libelé (ici nom) et la valeur associée (ici le champs renseigné, exemple: Stéphane)
+                     PLACEHOLDER est l'indication en grisé du champs associé au label
+                -->
+                <input type="text" id="nom" name="nom" placeholder="Entrez votre nom!">
+                <br>
+            <!-- Comment envoyer ces données? Avec un bouton bien entendu -->
+                <button>Envoyer</button>
+                <br><br>
+            </form>
+            <!-- //////////////////////////////////////////////////////////////////// -->
+           <form action="" method="">
+                <label for="age">
+                        age: 
+                </label><br>
+                <input 
+                    type="number" 
+                    id="age" 
+                    name="age" 
+                    placeholder="Entrez votre age!"><br>
+            <form action="" method="">
+                <label 
+                for="note">
+                note: 
+                </label><br>
+                <input 
+                type="number" 
+                id="note" 
+                name="note" 
+                placeholder="Entrez votre note!"><br>
+                <!-- Une zone de texte avec TEXTAREA -->
+                <label for="message">
+                    complements d'information
+                </label><br>
+                <!-- cols et rows dimensionnent la zone de texte, mais il est preferable de le faire en css -->
+                <textarea name="auto-appréciation" id="message" cols="30" rows="5">
+                </textarea><br>
+                <button>Envoyer</button><br><br>
+            </form>
+            <form action="" method="">
+                <!-- vous pouvez rajouter un label en dessous de ce commentaire -->
+                <!-- Une selection parmi plusieurs option avec SELECT -->
+                <select name="matiere" id="matiere">
+                    <!-- la value est ce qui va etre envoyer au back-end -->
+                    <option value="mathematique">math</option>
+                    <option value="français">français</option>
+                    <option value="developpement">developpement web</option>
+                    <option value="anglais">anglais</option>
+                </select><br>
+                <!-- Une selection parmi plusieurs option avec LIST -->
+                <label for="leçon">
+                    la leçon
+                </label><br>
+                <input list="leçon">
+                    <datalist id="leçon">
+                        <option value="design">
+                        <option value="front">
+                        <option value="back">       
+                    </datalist>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
